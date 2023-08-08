@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Confess Your Feelings</title>
+    <title>Confeshion</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
@@ -11,7 +11,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: gray;
+            background-color: lightgray;
         }
 
         #messageContainer {
@@ -34,7 +34,7 @@
             margin-bottom: 20px;
             font-size: 24px;
             line-height: 1.5;
-            color: #555;
+            color: lightskyblue;
         }
 
         input[type="button"] {
@@ -75,31 +75,26 @@
 </head>
 <body>
 <div id="messageContainer">
-    <h1>Secret Feelings</h1>
-    <p id="messageDisplay">Hey crush,I just want to tell you that.</p>
+    <h1><del>Secret Feelings</del></h1>
+    <p id="messageDisplay"><h3 style="color: lightslategray;">Hey,I just want to tell you that.</h3></p>
     <input type="button" value="CLICK ME" onclick="displayNextMessage()">
-    <p>Made by<del> Zanjoe</del></p>
+    <p>Made by <del style="color: black;">Zanjoe</del></p>
 </div>
 
 <script>
     // Define an array of quotes for confessing feelings
     var quotes = [
-    'Every moment I spend with you is a treasure, and I can\'t help but confess that I love you more and more.',
-        'With every heartbeat, I find myself falling deeper in love with you. I can\'t keep this secret any longer.',
-        'You are the missing piece in my life, and I need you to know that I have feelings for you that I can\'t hide.',
-        'I\'ve been carrying this truth in my heart, and it\'s time to share it: I have fallen in love with you.',
-        'You light up my world in a way that words can\'t express. I confess my feelings for you with all my heart.',
-        'There\'s something about you that touches my soul, and I can\'t keep it to myself anymore. I love you deeply.',
-        'Life is too short not to be honest about our feelings. So here it is: I\'ve been captivated by you, and I can\'t hide it.',
-        'I\'ve been wanting to say this for a while, and I can\'t hold back any longer: I have strong feelings for you.',
-        'My heart races every time I think of you, and I can\'t hold back the truth anymore. I love you deeply.',
-        'I\'ve tried to find the right words, but all I can say is that I cherish you. I confess my feelings for you.',
-        'You bring joy to my life in ways I never imagined. I can\'t keep this to myself: I am in love with you.',
-        'My heart knows what it wants, and it wants you. I can\'t resist any longer - I love you more than words can say.',
-        'I may be nervous, but I\'m more afraid of not telling you how I feel. I\'m confessing that I have feelings for you.',
-        'I\'ve kept this secret for too long, and it\'s time to be honest: I have fallen for you, and I can\'t deny it.',
-        'There\'s a warmth in your presence that I can\'t ignore. I confess that I have feelings for you, and I hope you feel the same.',
-    ];
+    'Every time our eyes meet, my heart races like a thrilling adventure waiting to unfold.',
+    'You bring a symphony of joy to my life, and I can\'t help but confess my feelings for you.',
+    'My thoughts are a canvas painted with you, and it\'s time to share this masterpiece.',
+    'There\'s a magnetic force between us, and I can\'t hide the fact that you\'ve captured my heart.',
+    'Life has dealt me a winning hand by bringing you into it. I confess, you\'re the jackpot I\'ve been seeking.',
+    'You\'re the spark in my mundane routine, igniting a fire of emotions I can no longer keep hidden.',
+    'Our connection is like a puzzle, and I\'m ready to admit that you\'re the missing piece I\'ve been searching for.',
+    'In the chaos of life, you\'re my North Star guiding me home. I can\'t hide it any longer: you mean the world to me.',
+    'You\'re my daily dose of happiness, and I can\'t keep it under wraps any longer: my heart beats for you.',
+    'Every moment with you is like a chapter from a book I can\'t put down. I confess, I\'m eager to write our story together.'
+];
 
     // Get the message display element
     var messageDisplay = document.getElementById('messageDisplay');
