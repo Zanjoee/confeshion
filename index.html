@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Confeshion</title>
+    <title>Confession</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
@@ -75,47 +75,36 @@
 </head>
 <body>
 <div id="messageContainer">
-    <h1>Hey I just want to tel you that.</h1>
+    <h1>Hey, I just want to tell you that...</h1>
     
     <input type="button" value="CLICK ME" onclick="displayNextMessage()">
     <p>Made by Zanjoe</p>
+    <p id="messageDisplay"></p>
 </div>
 
 <script>
-    // Define an array of quotes for confessing feelings
     var quotes = [
-    'Every time our eyes meet, my heart races like a thrilling adventure waiting to unfold.',
-    'You bring a symphony of joy to my life, and I can\'t help but confess my feelings for you.',
-    'My thoughts are a canvas painted with you, and it\'s time to share this masterpiece.',
-    'There\'s a magnetic force between us, and I can\'t hide the fact that you\'ve captured my heart.',
-    'Life has dealt me a winning hand by bringing you into it. I confess, you\'re the jackpot I\'ve been seeking.',
-    'You\'re the spark in my mundane routine, igniting a fire of emotions I can no longer keep hidden.',
-    'Our connection is like a puzzle, and I\'m ready to admit that you\'re the missing piece I\'ve been searching for.',
-    'In the chaos of life, you\'re my North Star guiding me home. I can\'t hide it any longer: you mean the world to me.',
-    'You\'re my daily dose of happiness, and I can\'t keep it under wraps any longer: my heart beats for you.',
-    'Every moment with you is like a chapter from a book I can\'t put down. I confess, I\'m eager to write our story together.'
-];
+        'Every time our eyes meet, my heart races like a thrilling adventure waiting to unfold.',
+        'You bring a symphony of joy to my life, and I can\'t help but confess my feelings for you.',
+        'My thoughts are a canvas painted with you, and it\'s time to share this masterpiece.',
+        'There\'s a magnetic force between us, and I can\'t hide the fact that you\'ve captured my heart.',
+        'Life has dealt me a winning hand by bringing you into it. I confess, you\'re the jackpot I\'ve been seeking.',
+        'You\'re the spark in my mundane routine, igniting a fire of emotions I can no longer keep hidden.',
+        'Our connection is like a puzzle, and I\'m ready to admit that you\'re the missing piece I\'ve been searching for.',
+        'In the chaos of life, you\'re my North Star guiding me home. I can\'t hide it any longer: you mean the world to me.',
+        'You\'re my daily dose of happiness, and I can\'t keep it under wraps any longer: my heart beats for you.',
+        'Every moment with you is like a chapter from a book I can\'t put down. I confess, I\'m eager to write our story together.'
+    ];
 
-    // Get the message display element
     var messageDisplay = document.getElementById('messageDisplay');
-
-    // Set the initial quote index
     var currentIndex = 0;
 
-    // Function to display the next quote
     function displayNextMessage() {
-        // Check if there are more quotes to display
         if (currentIndex < quotes.length) {
-            // Get the current quote from the array
             var currentQuote = quotes[currentIndex];
-
-            // Update the message display
             messageDisplay.innerHTML = currentQuote;
-
-            // Increment the index to display the next quote next time
             currentIndex++;
         } else {
-            // When all quotes are displayed, reset the index to show the first quote again
             currentIndex = 0;
         }
     }
